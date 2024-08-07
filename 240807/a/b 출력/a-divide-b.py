@@ -6,6 +6,6 @@ print(f"{a//b}.",end='')
 r = a%b * 10
 
 for _ in range(20):
-    q = r//5
-    r = r%5 * 10
+    q = r//b
+    r = r%b * 10
     print(q,end='')
