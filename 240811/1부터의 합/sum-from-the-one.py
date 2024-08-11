@@ -6,4 +6,4 @@ for i in range(1,101):
     if sum >= n:
         break
 
-print(sum)
+print(i)
