@@ -5,6 +5,8 @@
 |[Novice High / 배열, 연결 리스트 / Iterator](https://www.codetree.ai/missions?missionId=6)|20xp|![쉬움][easy]|
 
 
+## 메모
+`erase` 호출 후 반환 값으로 `it`를 갱신해주어야 한다는 걸 까먹고 삽질 ;;
 
 
 
