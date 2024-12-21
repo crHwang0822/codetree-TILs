@@ -90,9 +90,9 @@ for _ in range(m):
 
     elif command == "D":
         if it != dll.end():
-            dll.erase(it)
+            it = dll.erase(it)
     
-    else:
+    elif command.startswith("P"):
         _, c = command.split()
         dll.insert(it, c)
 
