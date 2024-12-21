@@ -63,9 +63,7 @@ class DLL:
 
 
 
-nm = list(map(int,input().split()))
-n = nm[0]
-m = nm[1]
+n, m = tuple(map(int, input().split()))
 
 str = input()
 
