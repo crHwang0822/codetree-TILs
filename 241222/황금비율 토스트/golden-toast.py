@@ -61,19 +61,20 @@ class DLL:
     def end(self):
         return self.tail
 
-import sys
 
-input = sys.stdin.readline
 
 nm = list(map(int,input().split()))
 n = nm[0]
 m = nm[1]
-s = input()
-dll = DLL()
 
-for i in s:
+str = input()
+
+# 연결 리스트
+dll = DLL()
+for i in str:
     dll.push_back(i)
 
+# iterator
 it = dll.end()
 
 for _ in range(m):
@@ -95,6 +96,7 @@ for _ in range(m):
     elif command == "P":
         dll.insert(it, str[1])
 
+# 출력
 it = dll.begin()
 while it != dll.end():
     print(it.data, end="")
