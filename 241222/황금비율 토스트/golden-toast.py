@@ -78,8 +78,7 @@ for i in str:
 it = dll.end()
 
 for _ in range(m):
-    str = list(input().split())
-    command = str[0]
+    command = input()
 
     if command == "L":
         if it != dll.begin():
@@ -93,8 +92,9 @@ for _ in range(m):
         if it != dll.end():
             dll.erase(it)
     
-    elif command == "P":
-        dll.insert(it, str[1])
+    elif command.startswith("P"):
+        _, c = command.split()
+        dll.insert(it, c)
 
 # 출력
 it = dll.begin()
