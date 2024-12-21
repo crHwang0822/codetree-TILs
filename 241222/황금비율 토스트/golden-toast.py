@@ -68,11 +68,11 @@ input = sys.stdin.readline
 nm = list(map(int,input().split()))
 n = nm[0]
 m = nm[1]
-str = list(input())
+s = input()
 dll = DLL()
 
-for i in range(n):
-    dll.push_back(str[i])
+for i in s:
+    dll.push_back(i)
 
 it = dll.end()
 
